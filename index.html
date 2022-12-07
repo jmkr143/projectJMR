@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<!--Jamie Randolph
+template.html
+11/1/2022-->
+<html lang="en">
+<head>
+	<title>Enjoy your Experience | Shank Shack</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles_JMR.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 
+</head>
+<body>
+
+	<div id="container">
+	
+	<!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="booking.html">Booking</a>
+			<a href="menu.html">Menu</a>
+			<a href="services.html">Services</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
+		<header>
+			<h1>Shank Shack</h1>
+			<h4 class="tablet-desktop">Golf now, Ask later</h4>
+			<a href="index.html"><img src="images/logo3.jpg" alt="Shank Shack Logo" class="round"></a>
+		</header>
+		
+	<!--Tablet, Desktop Nav-->	
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="booking.html">Booking</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+		
+		<!-- Hero Image -->
+		<div id="hero" class="tablet-desktop">
+			<img src="images/herobanner.jpg" alt"friends enjoying time on golf simulator">
+		</div>
+
+		<!--Insert attention grabbing content displaying what takes place at Shank Shack-->
+		<main id="content">
+			<div class="mobile">
+				<p>Welcome to The Shank Shack!</p> 
+				<p>Come sit back, relax, and hit the green to the EXTREME!</p>
+				
+				<h3>Join our FREE Rewards Membership!!</h3>
+				<p>Call Us Today to Book Your Tee Time:</p>
+				<p class="tel-link"><a href="tel:555-555-5555">(555) 555-5555</a></p>
+			
+				<h5>Hours:</h5>
+				<ul class="hours">
+					<li>Mon-Thur: 8:00am-10:00pm</li>
+					<li>Fri-Sat: 8:00am-2:00am</li>
+					<li>Sunday: 8:00am-8:00pm</li>
+				</ul>
+			</div>	
+			
+			<div class="tablet-desktop">
+				<h3>The Shank Shack website is an informative/advertising site about our Indoor Golf Simulator Facility</h3>
+			
+				<!--Insert Specials here-->		
+					<h4>Check out our Weekday Specials!</h4>
+					<p>Monday: $5 Club Rentals</p>
+					<p>Tuesday: Bring a Friend 1/2 Off</p>
+					<p>Wednesday: 1/2 off Rounds</p>
+					<p>Thursday: $10 Buckets</p>
+					<p>Friday: Free Slice of Pizza</p>
+					<br>
+			</div>
+			
+			<div class="grid">
+				<figure class="frame">
+					<a href="booking.html"><img src="images/bayrental.jpg" alt="bay rental"></a>
+					<figcaption class="pic-text">Bay Rental</figcaption>
+				</figure>
+				
+				<figure class="frame">
+					<a href="menu.html"><img src="images/foodtable.jpg" alt="foodtable"></a> <figcaption class="pic-text">Menu</figcaption>
+				</figure>
+				
+				<figure class="frame">
+					<a href="services.html"><img src="images/partypic.jpg" alt="party picture"></a> <figcaption class="pic-text">Services</figcaption>
+				</figure>
+
+			</div>
+			
+			<div id="music-sample">
+			
+				<h3>We play all genres of music to keep you entertained during your time here. Below is a sample of the type of music played at our location.</h3>
+				<audio controls>
+					<source src="media/audio-happy.mp3" type="audio/mp3">
+					<source src="media/audio-happy.ogg" type="audio/ogg">
+					<p>Your browser does not support the audio element.</p>
+				</audio>
+				
+			</div>
+			
+		</main>
+		
+		<footer>
+			<p>Randolph</p>
+			<!--This project is for a class assignment -->
+			<p>11/25/2022</p>
+			<p><a href="mailto:contactus@shankshack.com">contactus@shankshack.com</a></p>
+			
+			<div class="social">
+				<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+				<a href="https://twitter.com" target="blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+			</div>
+			
+		</footer>
+	</div>
+	
+	<script src="scripts/script.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--Jamie Randolph
+booking.html
+11/1/2022-->
+<html lang="en">
+<head>
+	<title>Pricing Info | Booking</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles_JMR.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+</head>
+<body>
+	
+	<div id="container">
+	
+	<!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="booking.html">Booking</a>
+			<a href="menu.html">Menu</a>
+			<a href="services.html">Services</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
+		<header>
+			<h1>Shank Shack</h1>
+			<h4 class="tablet-desktop">Golf now, Ask later</h4>
+			<a href="index.html"><img src="images/logo3.jpg" alt="Shank Shack Logo" class="round";></a>
+		</header>
+		
+		<!--Tablet, Desktop Nav-->	
+		<nav class="tablet-desktop">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="booking.html">Booking</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		
+		</nav>
+
+		<main>
+		
+			<div id="hero" class="tablet-desktop">
+				<img src="images/banner.jpg" alt="Seating and Play Area">
+			</div>
+		
+			<div id="booking">
+			
+			</div>
+			
+			<div class="mobile">
+			
+				<h3>Bay Rentals</h3>
+				<p>Early Bird: Member/Non-Member $15/hour &amp; $30/hour</p>
+				<p>Regular Bay: Member/Non-Member $30/hour &amp; $50/hour</p>
+				<p>Studio Bay: Member/Non-Member $40/hour &amp; $60/hour</p>
+				<p>Party Bay: Member/Non-Member $60/hour &amp; $80/hour</p>
+				<p>Super Bay: Member/Non-Member $80/hour &amp; $100/hour</p>
+				
+			</div>
+			
+			<div class="tablet-desktop">
+			
+				<table><!-- Start Table -->
+					<caption>Bay Rentals</caption>
+					<tr><!-- Row 1 -->
+						<th> </th>
+						<th>Member</th>
+						<th>Non-Member</th>
+					</tr>
+					<tr><!-- Row 2 -->
+						<td>Early Bird (8am-10am)</td>
+						<td>$15/hour</td>
+						<td>$30/hour</td>
+					</tr>
+					<tr><!-- Row 3 -->
+						<td>Regular Bay</td>
+						<td>$30/hour</td>
+						<td>$50/hour</td>
+					</tr>
+					<tr><!-- Row 4 -->
+						<td>Studio Bay</td>
+						<td>$40/hour</td>
+						<td>$60/hour</td>
+					</tr>
+					<tr><!-- Row 5 -->
+						<td>Party Bay</td>
+						<td>$60/hour</td>
+						<td>$80/hour</td>
+					</tr>
+					<tr><!-- Row 6 -->
+						<td>Super Bay</td>
+						<td>$80/hour</td>
+						<td>$100/hour</td>
+					</tr>
+				</table><!-- End Table-->
+				
+			</div>
+			
+			<div id="form">
+			
+				<h2>Complete the form below to book your bay.</h2>
+				
+				<form class="form-grid"><!-- Start Form -->
+				
+					<fieldset>
+						<legend>Customer Information</legend>
+						<label for="fName">First Name:</label>
+						<input type="text" name="fName" id="fName" required>
+						
+						<label for="lName">Last Name:</label>
+						<input type="text" name="lName" id="lName" required>
+						
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" required>
+						
+						<label for="phone">Phone:</label>
+						<input type="tel" id="phone" name="phone" required>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Bay Choice</legend>
+						<label for="reference">Which Bay?</label>
+						<select name="reference" id="reference">
+							<option value="earlybird">Early Bird</option>
+							<option value="regular">Regular Bay</option>
+							<option value="studio">Studio Bay</option>
+							<option value="party">Party Bay</option>
+							<option value="super">Super Bay</option>
+						</select>
+							
+						<label for="PartyNumber">How many are in your party?</label>
+						<textarea id="partynumber" name="partynumber" rows="5" cols="35"></textarea>
+							
+						<label for="promo">Promo Code:</label>
+						<input type="text" id="promo" name="promo">
+					</fieldset>
+					
+					<fieldset>
+						<legend>Additional Information</legend>
+						<p>I would like more information about:</p>
+						
+						<label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Group Fitness">Becoming a Rewards Member</label>
+						
+						<label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Personal Training">Shank Shack Memberhsip</label>
+					</fieldset>
+
+					<input type="submit" id="submit" value="Submit" class="btn">
+
+		</main>
+
+		<footer>
+			<p>Randolph</p>
+			<!--This project is for a class assignment-->
+			<p>11/25/2022</p>
+			<p><a href="mailto:contactus@shankshack.com">contactus@shankshack.com</a></p>
+			
+			<div class="social">
+				<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo"></a>
+				<a href="https://twitter.com" target="blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a>
+			</div>
+			
+		</footer>
+	</div>
+	
+	<script src="scripts/script.js"></script>
+
+</body>
+</html>

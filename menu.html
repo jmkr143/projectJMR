@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--Jamie Randolph
+menu.html
+11/1/2022-->
+<html lang="en">
+<head>
+	<title>Menu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles_JMR.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+</head>
+<body>
+
+	<div id="container">
+	
+	<!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="booking.html">Booking</a>
+			<a href="menu.html">Menu</a>
+			<a href="services.html">Services</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
+		<header>
+			<h1>Shank Shack</h1>
+			<h4 class="tablet-desktop">Golf now, Ask later</h4>
+			<a href="index.html"><img src="images/logo3.jpg" alt="Shank Shack Logo" class="round";></a>
+		</header>
+		
+		
+		<!--Tablet, Desktop Nav-->	
+		<nav class="tablet-desktop">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="booking.html">Booking</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<div class="menu">
+				<div class="mobile">  <!-- add this class and the list below so that the table doesn't appear on mobile devices -->
+				<h2><!--add a blurb here about your food/drinks for sale --></h2>
+				<h3 id="menu">Food</h3> <!-- this id will format with your #menu, #drinks formatting -->
+					<ul>
+						<li>Fried Pickles $7</li>
+						<li>Mozzarella Sticks $6</li>
+						<li>Whole Pizza $15</li>
+						<li>Slice of Pizza $3</li>
+					</ul>
+				<h3 id="drinks">Drinks</h3>
+					<ul>
+						<li>Draft Beer $5</li>
+						<li>Mixed Drinks $10</li>
+						<li>Canned Soda $2</li>
+						<li>Bottled Water $1</li>
+					</ul>
+				</div> <!--close mobile -->
+				
+				<div class="tablet-desktop"> <!-- this table set will appear on your pages, please note that I had to fix the style so the text would show up in the darker box. nth-child (odd): black; -->
+
+					<table>
+						<tr>
+						<th colspan="2">Food Menu</th> <!-- add the colspan attribute so the title spans both columns -->
+						</tr>
+					<tbody>
+						<tr>
+							<td><img class="equip" src="images/fried_pickles.jpg" alt="Fried Pickles" class="round"></td>
+							<td>Fried Pickles $7</td>
+						</tr>
+						<tr>
+							<td><img class="equip" src="images/mozz_sticks.jpg" alt="Mozzarella Sticks" class="round";></td>
+							<td>Mozzarella Sticks $6</td>
+						</tr>
+							<td><img class="equip" src="images/pizza_beer.jpg" alt="Pizza" class="round";></td>
+							<td>
+								<ul>
+									<li>Slice of Pizza $3</li>
+									<li>Whole Pizza $15</li>
+								</ul>
+							</td>
+						<tr>
+					</tbody>
+					</table>
+				<table>
+					<tbody>
+							<th colspan="2">Drink Menu</th> <!--add the colspan option so it spans 2 columns -->
+						</tr>
+						<tr>
+							<td><img class="equips" src="images/beers.jpg" alt="Beer";></td>
+							<td>
+								<ul>
+									<li>Draft Beer $5</li>
+									<li>Mixed Drinks $10</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="equips" src="images/cokes.jpg" alt="Sodas";></td>
+							<td>Canned Soda $2</td>
+						</tr>
+						<tr>
+							<td><img class="equips" src="images/bott_water.jpg" alt="Bottled Water";></td>
+							<td>Bottled Water $1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div> <!-- close the tablet-desktop class -->
+		</div> <!-- close menu class-->
+	</main>
+
+		<footer>
+			<p>Randolph</p>
+			<!--This project is for a class assignment-->
+			<p>11/25/2022</p>
+			<p><a href="mailto:contactus@shankshack.com">contactus@shankshack.com</a></p>
+		</footer>
+	 
+	</div> <!-- container -->
+	
+	<script src="scripts/script.js"></script>
+	
+</body>
+</html>
